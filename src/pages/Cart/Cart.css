@@ -1,0 +1,37 @@
+.cart__container {
+  max-width: 80rem;
+  margin: auto;
+  padding: .5rem;
+}
+
+.cart__container > h1 {
+  margin: 3rem 0 2rem;
+}
+
+.cart__container > h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.cart__container > h2 > span.amount {
+  color: #219653;
+}
+
+@media only screen and (min-width: 901px) {
+  .cart__container > h1, .cart__container > h2,  {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .cart__container > h1, .cart__container > h2 {
+    font-size: 1.25rem;
+  }
+}
+
+.cart__container > .MuiPaper-root {
+  margin: 2rem 0;
+  box-shadow: none;
+}

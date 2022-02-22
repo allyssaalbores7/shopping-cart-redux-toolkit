@@ -1,0 +1,25 @@
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80rem;
+  margin: auto;
+  padding: 1rem .5rem;
+  border-top: 1px solid lightgray;
+}
+
+.footer__container > a {
+  text-decoration: none;
+  color: #3f3f46;
+  font-size: .90rem;
+  font-weight: 500;
+}
+
+.footer__container > a:hover {
+  color: #1b4acb;
+}
+
+.footer__container > nav > a  {
+  color: #3f3f46;
+  max-width: 12vw;
+}

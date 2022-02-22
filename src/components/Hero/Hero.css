@@ -1,0 +1,103 @@
+.hero__container {
+  display: grid;
+  grid-auto-flow: row dense;
+  align-items: center;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  max-width: 80rem;
+  margin: auto;
+  padding: .5rem;
+}
+
+@media only screen and (min-width: 901px) {
+  .hero__container--image {
+    padding: 2rem 0rem 2rem 10rem;
+  }
+
+  .hero__container--texts > h1 {
+    font-size: 2.25rem;
+    line-height: 2.95rem;
+  }
+
+  .hero__container--texts > h2, .hero__container--texts > h3 {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero__container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .hero__container--texts > h1 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  .hero__container--texts > h2, .hero__container--texts > h3 {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  .hero__container--texts {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .hero__container--image {
+    padding: 0;
+    margin-top: 2rem;
+  }
+}
+
+.hero__container--texts {
+  grid-column: span 2 / span 2;
+}
+
+.hero__container--image {
+  grid-column: span 3 / span 3;
+}
+
+.hero__container--image > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+
+.hero__container--texts > h2 {
+  color: #219653;
+  font-weight: 700;
+}
+
+.hero__container--texts > h1 {
+  color: #0f172a;
+  font-weight: 800;
+  margin: 0.75rem 0;
+}
+
+.hero__container--texts > h3 {
+  color: #0f172a;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.50rem;
+  margin: 2rem 0;
+}
+
+.buttons > a {
+  text-transform: capitalize;
+}
+
+.buttons > a.contained {
+  background: #1b4acb;
+}
+
+.buttons > a.outlined {
+  color: #1b4acb;
+  border-color: #1b4acb;
+}

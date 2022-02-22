@@ -1,0 +1,53 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background: #fff;
+  width: 100%;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80rem;
+  margin: auto;
+  padding: 1rem .5rem;
+}
+
+.navbar__container > img {
+  height: 3rem;
+  width: auto;
+  cursor: pointer;
+}
+
+.navbar__container > img:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (min-width: 401px) {
+  .navbar__container > img.name {
+    display: block;
+  }
+  .navbar__container > img.icon {
+    display: none;
+  }
+}
+
+  @media only screen and (max-width: 400px) {
+    .navbar__container > img.name {
+      display: none;
+    }
+    .navbar__container > img.icon {
+      display: block;
+    }
+  }
+
+.navbar__container > .MuiBadge-root > button {
+  background-color: #1b4acb;
+  text-transform: capitalize;
+}
+
+.MuiBadge-root > .MuiBadge-anchorOriginTopRightRectangular {
+  background-color: #ff4d4f;
+}
